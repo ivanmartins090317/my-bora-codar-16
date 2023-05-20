@@ -1,0 +1,177 @@
+/* Pra inplementar a parte de Javascript
+https://www.youtube.com/watch?v=p-hgFD2HJSc */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+html,
+body,
+input {
+  font-family: "Roboto";
+}
+.container {
+  padding: 40px;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+
+body {
+  color: #e1e1e6;
+  background-color: #1a1924;
+}
+header {
+  background-color: #16151e;
+}
+nav {
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+}
+nav ul {
+  gap: 16px;
+}
+nav ul li {
+  font-size: 24px;
+}
+
+form {
+  margin-top: 24px;
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  position: absolute;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.input-wrap {
+  gap: 10px;
+
+  border-radius: 5px;
+  background-color: #24243d;
+  padding: 16px 24px;
+}
+
+.input-wrap input {
+  background-color: transparent;
+  width: 100%;
+  outline: 0;
+  border: none;
+  font-size: 12px;
+  color: #e1e1e6;
+}
+
+.input-wrap input::placeholder {
+  color: #e1e1e6;
+}
+.input-wrap i {
+  font-size: 16px;
+}
+.input-wrap:focus-within {
+  outline: 2px white solid;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.contacts::-webkit-scrollbar {
+  width: 8px;
+}
+.contacts::-webkit-scrollbar-thumb {
+  background: #282843;
+  border-radius: 999px;
+}
+
+.letter {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+  lene-height: 19px;
+  background-color: var(--color);
+}
+
+.purple {
+  --color: #633bbc;
+}
+.green {
+  --color: #07847e;
+}
+.black {
+  --color: #232323;
+}
+
+.pink {
+  --color: #9a00b3;
+}
+
+.person {
+  gap: 16px;
+}
+
+.person img {
+  width: 48px;
+  height: 48px;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+.person h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.person p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8c8cba;
+
+  margin-top: 4px;
+}
+
+.list-wrap ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+header nav,
+header form,
+.list-wrap {
+  max-width: 350px;
+  width: 100%;
+
+  margin-inline: auto;
+}
